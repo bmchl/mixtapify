@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
 import spotipy
-#from spotipy.oauth2 import SpotifyClientCredentials
+from spotipy.oauth2 import SpotifyAuthBase, CacheFileHandler
+
 class SpotifyClientCredentials(SpotifyAuthBase):
 		OAUTH_TOKEN_URL = "https://accounts.spotify.com/api/token"
 	
